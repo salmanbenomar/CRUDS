@@ -32,14 +32,12 @@ header h3{
 padding: 12px 0px 12px 10px;
 border-radius: 7px;
 margin-bottom: 10px;
-outline:none;
+outline-color: #4895ef;
 border: none;
 background-color: white;
 border: solid 1.5px white;
 }
-.inputs-container input:focus{
-    box-shadow: 0px 0px 2px #4895ef;;
-}
+
 .inputs-container #title,
 .inputs-container #count,
 .inputs-container #search,
