@@ -113,17 +113,17 @@ border: solid 1.5px white;
     background-color: #4361ee;
     transition: 0.3s;
 }
+.table{
+    max-width: 100%;
+    overflow-x: auto;
+}
 table{
   width: 1000px;
   background-color:#f5f5f5;
   border-radius: 10px;
-  padding-bottom:300px;
   padding-bottom: 200px;
   margin: 15px auto 50px;
-  
   border-spacing: 0;
-
-  
 }
 
 table tr{
@@ -166,9 +166,15 @@ table tr td .update{
 }
 
 @media (max-width:1200px){
-    .inputs-container,
-     table{
+    .inputs-container
+    {
         width: calc(100% - 40px);
+    }
+    .table{
+        margin:  0 20px;
+    }
+    table{
+        width: 100%;
     }
     .inputs-container .total{
         display: flex;
@@ -187,50 +193,6 @@ table tr td .update{
         margin-bottom: 10px;
         display: block;
         width: 100% !important;
-    }
-}
-@media (max-width: 900px) {
-
-    table tr {
-        display: block;
-        border-bottom: solid 1px #ddd;
-        margin-bottom: 10px;
-    }
-
-    table tr th,
-    table tr td {
-        display: block;
-        text-align: center;
-        padding: 10px;
-    }
-
-    table tr th {
-        font-size: 18px;
-        font-weight: normal;
-        border-bottom: solid 1px #4895ef;
-    }
-
-    table tr td {
-        font-size: 16px;
-    }
-
-    table tr td button {
-        margin-top: 5px;
-        margin-right: 5px;
-    }
-
-    .inputs-container .total {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 10px;
-    }
-
-    .inputs-container .search {
-        flex-direction: column;
-    }
-
-    .inputs-container .search button {
-        width: 100%;
     }
 }
 
